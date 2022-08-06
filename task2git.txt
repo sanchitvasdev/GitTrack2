@@ -1,0 +1,113 @@
+1. $ git init
+Initialized empty Git repository in C:/Users/sanch/OneDrive/Desktop/misc/GitTrack2/.git/
+
+$ git remote add origin https://github.com/sanchitvasdev/GitTrack2.git
+$ git push -u origin master
+
+2. $ touch myintro.txt
+$ touch myname.txt
+
+$ git add .
+$ git commit -m 'second commit'
+[master 20ac03d] second commit
+ 2 files changed, 9 insertions(+)
+ create mode 100644 myintro.txt
+ create mode 100644 myname.txt
+
+$ git tag 1.0.0 -m 'First tag'
+$ git push origin 1.0.0
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 160 bytes | 160.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/sanchitvasdev/GitTrack2.git
+ * [new tag]         1.0.0 -> 1.0.0
+
+3. $ vim myname.txt
+Sanchit
+:wq
+
+$ vim myintro.txt
+My name is Sanchit
+:wq
+
+$ git add .
+$ git commit -m 'third commit'
+[master f011c1c] third commit
+ 2 files changed, 2 insertions(+)
+
+$ git tag 1.0.1 -m 'second tag'
+
+$ git push origin 1.0.1
+Enumerating objects: 8, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 436 bytes | 218.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/sanchitvasdev/GitTrack2.git
+ * [new tag]         1.0.1 -> 1.0.1
+
+
+4. $ touch file3.txt
+$ git add .
+$ git commit -m 'Fourth commit'
+[master dde156f] Fourth commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file3.txt
+
+$ git tag 1.1.0 -m 'Third tag'
+$ git push origin 1.1.0
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 432 bytes | 216.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/sanchitvasdev/GitTrack2.git
+ * [new tag]         1.1.0 -> 1.1.0
+
+5. $ git checkout 1.0.1
+Note: switching to '1.0.1'.
+
+$ vim myname.txt
+Sanchit Vasdev
+:wq
+
+$ git add .
+$ git commit -m 'Fifth commit'
+[detached HEAD 7a248e6] Fifth commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+$ git tag 1.0.2 -m 'fourth tag'
+$ git push origin 1.0.2
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 413 bytes | 413.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/sanchitvasdev/GitTrack2.git
+ * [new tag]         1.0.2 -> 1.0.2
+
+6. $ git checkout 1.1.0
+$ vim myintro.txt
+My name is Sanchit Vasdev
+:wq
+
+$ git add .
+$ git commit -m 'sixth commit'
+[detached HEAD 7e50f5d] sixth commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+$ git tag 1.1.1 -m 'Fifth tag'
+$ git push origin 1.1.1
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 457 bytes | 228.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/sanchitvasdev/GitTrack2.git
+ * [new tag]         1.1.1 -> 1.1.1
+
