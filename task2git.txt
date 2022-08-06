@@ -1,9 +1,0 @@
-1. $ git init
-Initialized empty Git repository in C:/Users/sanch/OneDrive/Desktop/misc/GitTrack2/.git/
-
-$ git remote add origin https://github.com/sanchitvasdev/GitTrack2.git
-$ git push -u origin master
-
-2. $ touch myintro.txt
-$ touch myname.txt
-
